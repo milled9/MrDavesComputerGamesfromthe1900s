@@ -5,7 +5,8 @@ const CATEGORY_LABELS = {
   logic: "Logic & Puzzles",
   science: "Science",
   early: "Early Learning",
-  sim: "City & Sim"
+  sim: "City & Sim",
+  arcade: "Arcade Classics"
 };
 
 const grid = document.getElementById("grid");
@@ -50,7 +51,7 @@ function renderGrid() {
       <button class="thumb" data-id="${i}" aria-label="${g.external ? 'Open ' + g.title + ' (opens in a new tab)' : 'Play ' + g.title}">
         ${g.thumbnail || g.archiveId
           ? `<img src="${thumbnailUrl(g)}" alt="${g.title} thumbnail" loading="lazy">`
-          : `<span class="thumb__placeholder" aria-hidden="true">\u2328\ufe0f</span>`}
+          : `<span class="thumb__placeholder" aria-hidden="true">${g.icon || "\u2328\ufe0f"}</span>`}
         <span class="thumb__play">${g.external ? "\u2197 Open" : "\u25b6 Play"}</span>
         ${g.external ? `<span class="thumb__badge">Opens in new tab</span>` : ""}
       </button>
@@ -95,18 +96,33 @@ const screenObserver = new ResizeObserver(fitScreen);
 
 function openGame(game) {
   modalTitle.textContent = game.title;
-  modalScreen.innerHTML = `<iframe src="${embedUrl(game.archiveId)}" allowfullscreen title="${game.title}"></iframe>`;
+
+  if (game.canvasGame) {
+    modalScreen.innerHTML = `<canvas class="arcade-canvas"></canvas>`;
+    const canvas = modalScreen.querySelector("canvas");
+    activeArcadeStop = ARCADE_GAMES[game.canvasGame].start(canvas);
+  } else {
+    modalScreen.innerHTML = `<iframe src="${embedUrl(game.archiveId)}" allowfullscreen title="${game.title}"></iframe>`;
+    screenObserver.observe(modalScreen);
+    requestAnimationFrame(fitScreen);
+  }
+
   modal.classList.add("is-open");
   document.body.style.overflow = "hidden";
-  screenObserver.observe(modalScreen);
-  requestAnimationFrame(fitScreen);
 }
+
+let activeArcadeStop = null;
 
 function closeGame() {
   modal.classList.remove("is-open");
+  if (activeArcadeStop) {
+    activeArcadeStop();
+    activeArcadeStop = null;
+  } else {
+    screenObserver.unobserve(modalScreen);
+  }
   modalScreen.innerHTML = "";
   document.body.style.overflow = "";
-  screenObserver.unobserve(modalScreen);
 }
 
 document.addEventListener("fullscreenchange", () => requestAnimationFrame(fitScreen));

@@ -108,5 +108,26 @@ const GAMES = [
     category: "adventure",
     archiveId: "msdos_Fatty_Bears_Birthday_Surprise_1993",
     blurb: "Help Fatty Bear gather cake ingredients and party supplies for Kayla's surprise birthday party."
+  },
+  {
+    title: "Paddle Ball",
+    category: "arcade",
+    canvasGame: "pong",
+    icon: "\ud83c\udfd3",
+    blurb: "A 2-player paddle-and-ball game \u2014 one player uses W/S, the other uses the arrow keys."
+  },
+  {
+    title: "Grow the Line",
+    category: "arcade",
+    canvasGame: "snake",
+    icon: "\ud83d\udc0d",
+    blurb: "Guide your line around the board to eat food and grow \u2014 don't hit the walls or yourself!"
+  },
+  {
+    title: "Brick Breaker",
+    category: "arcade",
+    canvasGame: "breakout",
+    icon: "\ud83e\uddf1",
+    blurb: "Bounce the ball with your paddle to clear every brick. Use the arrow keys or your mouse."
   }
 ];
