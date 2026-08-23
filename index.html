@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. Dave's Computer Games from the 1900's</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="sunburst">
+    <div class="cloud cloud--1"></div>
+    <div class="cloud cloud--2"></div>
+    <div class="cloud cloud--3"></div>
+    <img class="mascot-sun" src="assets/sun-mascot.png" alt="Our school's sun mascot wearing sunglasses">
+  </div>
+
+  <div class="brand-banner">
+    <div class="brand-banner__inner">
+      <div class="quick-link-group quick-link-group--left">
+        <a class="quick-link quick-link--google" href="https://www.google.com" target="_blank" rel="noopener">
+          <svg class="quick-link__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 L6 12 L15 20 L15 15 L20 15 L20 9 L15 9 Z" fill="#2a2320"/></svg>
+          <span class="quick-link__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.6H24v9h11.8c-.5 2.8-2.1 5.2-4.4 6.8v5.6h7.1c4.2-3.9 6.6-9.6 6.6-16.8z"/>
+              <path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-7.1-5.6c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41 15.4 46 24 46z"/>
+              <path fill="#FBBC05" d="M11.8 28.2c-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2v-5.7H4.5C3 17 2 20.4 2 24s1 7 4.5 9.9l7.3-5.7z"/>
+              <path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.4 2 8.1 7 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/>
+            </svg>
+          </span>
+          <span class="quick-link__label">Google</span>
+        </a>
+
+        <a class="quick-link quick-link--mathplayground" href="https://www.mathplayground.com/" target="_blank" rel="noopener">
+          <svg class="quick-link__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 L6 12 L15 20 L15 15 L20 15 L20 9 L15 9 Z" fill="#2a2320"/></svg>
+          <span class="quick-link__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="13" width="4" height="8" rx="1" fill="#fff"/><rect x="10" y="8" width="4" height="13" rx="1" fill="#fff"/><rect x="17" y="3" width="4" height="18" rx="1" fill="#fff"/></svg>
+          </span>
+          <span class="quick-link__label">Math Playground</span>
+        </a>
+      </div>
+
+      <div class="brand-banner__title">
+        <h1>Mr. Dave's,<br>Computer Games from the 1900's 👾</h1>
+        <p>OLD-SCHOOL GAMES &mdash; PICK ONE &amp; PLAY!</p>
+      </div>
+
+      <div class="quick-link-group quick-link-group--right">
+        <a class="quick-link quick-link--clever" href="https://clever.com/in/clark" target="_blank" rel="noopener">
+          <span class="quick-link__label">Clever</span>
+          <span class="quick-link__icon" aria-hidden="true">C</span>
+          <svg class="quick-link__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 L18 12 L9 20 L9 15 L4 15 L4 9 L9 9 Z" fill="#2a2320"/></svg>
+        </a>
+
+        <a class="quick-link quick-link--roomrecess" href="https://www.roomrecess.com/" target="_blank" rel="noopener">
+          <span class="quick-link__label">Room Recess</span>
+          <span class="quick-link__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3 V21 M18 3 V21" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M6 3 H18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M9 3 L9 15" stroke="#fff" stroke-width="1.6"/><path d="M15 3 L15 15" stroke="#fff" stroke-width="1.6"/><rect x="7" y="14" width="10" height="2.4" rx="1" fill="#fff"/></svg>
+          </span>
+          <svg class="quick-link__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 L18 12 L9 20 L9 15 L4 15 L4 9 L9 9 Z" fill="#2a2320"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs"></nav>
+
+<main class="grid" id="grid"></main>
+
+<div class="modal" id="modal">
+  <div class="modal__box" id="modal-box">
+    <div class="modal__bar">
+      <h2 id="modal-title">Game</h2>
+      <div class="modal__actions">
+        <button id="modal-fullscreen">Fullscreen</button>
+        <button id="modal-close">Close</button>
+      </div>
+    </div>
+    <div class="modal__screen" id="modal-screen"></div>
+  </div>
+</div>
+
+<footer>
+  <svg viewBox="0 0 64 48" aria-hidden="true">
+    <ellipse cx="30" cy="26" rx="22" ry="14" fill="#7c8f4f"/>
+    <ellipse cx="30" cy="26" rx="22" ry="14" fill="none" stroke="#5f7038" stroke-width="1.5"/>
+    <path d="M14 26 L30 16 L46 26 L30 36 Z" fill="none" stroke="#5f7038" stroke-width="1.3"/>
+    <path d="M30 16 L30 36 M14 26 L46 26" stroke="#5f7038" stroke-width="1.2"/>
+    <circle cx="10" cy="22" r="6" fill="#8fa662"/>
+    <circle cx="7" cy="20" r="1.3" fill="#3d2b1a"/>
+    <ellipse cx="16" cy="38" rx="4" ry="3" fill="#7c8f4f"/>
+    <ellipse cx="44" cy="38" rx="4" ry="3" fill="#7c8f4f"/>
+  </svg>
+  <span>Approved by our classroom's desert tortoise — games run through the Internet Archive's software library.</span>
+</footer>
+
+<script src="games.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
