@@ -2,6 +2,12 @@
 // archiveId comes from the archive.org URL, e.g. archive.org/details/<archiveId>
 const GAMES = [
   {
+    title: "The Oregon Trail (1990)",
+    category: "adventure",
+    archiveId: "oregon-the-1990",
+    blurb: "The classic original MS-DOS release \u2014 simpler graphics than the Deluxe version, same wagon-trail journey west."
+  },
+  {
     title: "Science Adventure II",
     category: "science",
     archiveId: "scienceadventureii",
@@ -36,12 +42,6 @@ const GAMES = [
     category: "early",
     archiveId: "msdos_Reader_Rabbits_Ready_for_Letters_1992",
     blurb: "Six gentle activities for the youngest learners \u2014 letters, sounds, patterns, and more."
-  },
-  {
-    title: "JumpStart 2nd Grade",
-    category: "science",
-    archiveId: "SIG_WIN",
-    blurb: "Join C.J. the Frog through the Clubhouse, Classroom, and more for science, spelling, and math."
   },
   {
     title: "Mavis Beacon Teaches Typing",
@@ -102,12 +102,6 @@ const GAMES = [
     category: "reading",
     archiveId: "Word_Munchers_v1.4_1985_MECC",
     blurb: "Same tasty game, but now you're munching words and letters."
-  },
-  {
-    title: "Oregon Trail Deluxe",
-    category: "adventure",
-    archiveId: "msdos_Oregon_Trail_Deluxe_The_1992",
-    blurb: "Pack your wagon and head west. Watch out for the river crossings!"
   },
   {
     title: "Where in the World is Carmen Sandiego?",
