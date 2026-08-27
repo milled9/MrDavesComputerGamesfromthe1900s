@@ -2,6 +2,48 @@
 // archiveId comes from the archive.org URL, e.g. archive.org/details/<archiveId>
 const GAMES = [
   {
+    title: "Science Adventure II",
+    category: "science",
+    archiveId: "scienceadventureii",
+    blurb: "Explore Stonehenge, a human skull, a roller coaster's physics, and more with Isaac Asimov."
+  },
+  {
+    title: "Math Rabbit",
+    category: "early",
+    archiveId: "msdos_Math_Rabbit_1986",
+    blurb: "Four gentle counting and matching games starring Math Rabbit at the circus."
+  },
+  {
+    title: "Reader Rabbit",
+    category: "reading",
+    archiveId: "reader_rabbit_1_dos",
+    blurb: "The original Reader Rabbit \u2014 letter and word games in Reader Rabbit's storybook world."
+  },
+  {
+    title: "Reader Rabbit 2",
+    category: "reading",
+    archiveId: "msdos_Reader_Rabbit_2_1991",
+    blurb: "Collect words for Word-Ville through Vowel Pond, Word Mine, Word Patch, and Alphabet Dance."
+  },
+  {
+    title: "Reader Rabbit 3",
+    category: "reading",
+    archiveId: "msdos_Reader_Rabbit_3_1993",
+    blurb: "Help Reader Rabbit write the town newspaper by building sentences piece by piece."
+  },
+  {
+    title: "Reader Rabbit's Ready for Letters",
+    category: "early",
+    archiveId: "msdos_Reader_Rabbits_Ready_for_Letters_1992",
+    blurb: "Six gentle activities for the youngest learners \u2014 letters, sounds, patterns, and more."
+  },
+  {
+    title: "JumpStart 2nd Grade",
+    category: "science",
+    archiveId: "SIG_WIN",
+    blurb: "Join C.J. the Frog through the Clubhouse, Classroom, and more for science, spelling, and math."
+  },
+  {
     title: "Mavis Beacon Teaches Typing",
     category: "reading",
     archiveId: "msdos_Mavis_Beacon_Teaches_Typing_1987",
