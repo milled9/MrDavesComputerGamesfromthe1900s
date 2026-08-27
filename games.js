@@ -2,6 +2,54 @@
 // archiveId comes from the archive.org URL, e.g. archive.org/details/<archiveId>
 const GAMES = [
   {
+    title: "Mavis Beacon Teaches Typing",
+    category: "reading",
+    archiveId: "msdos_Mavis_Beacon_Teaches_Typing_1987",
+    blurb: "Learn touch typing lesson by lesson, then race the clock in an arcade typing challenge."
+  },
+  {
+    title: "Super Solvers: Challenge of the Ancient Empires",
+    category: "logic",
+    archiveId: "msdos_Super_Solvers_Challenge_of_the_Ancient_Empires_1990",
+    blurb: "Explore ancient Greece, Egypt, India, China, and the Near East to recover hidden treasures."
+  },
+  {
+    title: "Treasure MathStorm!",
+    category: "math",
+    archiveId: "msdos_Super_Solvers_Treasure_MathStorm_1992",
+    blurb: "Solve math riddles to free Treasure Mountain from the Master of Mischief's icy machine."
+  },
+  {
+    title: "Treasure Cove!",
+    category: "math",
+    archiveId: "msdos_Super_Solvers_Treasure_Cove_1994",
+    blurb: "Answer reading and math questions from friendly starfish to restore the cove's rainbow bridge."
+  },
+  {
+    title: "Super Solvers: OutNumbered!",
+    category: "math",
+    archiveId: "msdos_Super_Solvers_OutNumbered_1990",
+    blurb: "Crack the case by solving arithmetic problems and gathering clues around Shady Glen School."
+  },
+  {
+    title: "Super Solvers: Midnight Rescue!",
+    category: "logic",
+    archiveId: "msdos_Super_Solvers_Midnight_Rescue_1989",
+    blurb: "Read clues and solve riddles to catch the Master of Mischief before the school disappears."
+  },
+  {
+    title: "Super Solvers: Gizmos & Gadgets",
+    category: "science",
+    archiveId: "msdos_Super_Solvers_Gizmos_and_Gadgets_1993",
+    blurb: "Learn simple machines and basic physics by building vehicles to race Morty Maxwell."
+  },
+  {
+    title: "Super Munchers: The Challenge Continues",
+    category: "logic",
+    archiveId: "msdos_Super_Munchers_-_The_Challenge_Continues..._1991",
+    blurb: "Munch words that fit the category \u2014 covering science, geography, history, and more."
+  },
+  {
     title: "Number Munchers",
     category: "math",
     archiveId: "msdos_Number_Munchers_1990",
